@@ -3,5 +3,7 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_DIY_IP:8080
 
+echo "DEPLOYING HELLOWORLD NOW!!!!"
+
 cd $OPENSHIFT_REPO_DIR
 sed -i 's/@OPENSHIFT_INTERNAL_IP@/'"$OPENSHIFT_DIY_IP"'/g' helloworld.yml
